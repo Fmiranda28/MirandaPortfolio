@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="fernando miranda, portfolio, fernando, full stack dev, personal portfolio" />
+    <meta name="description" content="Welcome to Fernando's Portfolio. Full-Stack Web Developer" />
+    <title>Portfolio | Fernando Miranda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <canvas id="network-canvas"></canvas>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Fernando</span>
+            </div>
+            <div id="menu" class="fas fa-bars"></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Hi There,</h1>
+                <h2>I'm <span class="name">Fernando</span> <span class="highlight">Miranda</span></h2>
+				<h3>I Am Into <span class="frontend"></span>|</h3>
+                <a href="certificates/certifications.html" class="about-btn">
+                    View Certifications
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="social-links">
+                    <a href="https://github.com/Fermando951/Fermando951" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/fernando-miranda-2a7b77394/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://t.me/@codeCrypt28" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-circle">
+                    <img src="img/me1.jpg" alt="Fernando Miranda">
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="section-title">
+                <h2>
+                    <i class="fas fa-user"></i>
+                    About <span class="highlight">Me</span>
+                </h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/me2.jpg" alt="Fernando Miranda">
+                </div>
+
+                <div class="about-text">
+                    <h3>I'm Fernando</h3>
+                    <h4>Full Stack Developer</h4>
+                    
+                    <p>
+                        I am a Full-Stack developer based in Bulacan, Philippines. I am an Information 
+                        Technology undergraduate from NU - Baliwag. I am very passionate about 
+                        improving my coding skills & developing applications & websites. I 
+                        build MobileApps and Websites using Flutter and React.
+                    </p>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Email</strong>
+                            <span>: fernando.miranda282003@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Place</strong>
+                            <span>: Hagonoy, Bulacan</span>
+                        </div>
+                    </div>
+
+                    <a href="resume/Miranda_CV.pdf" class="resume-btn" download>
+                        Resume
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+
+                    <!--
+                    <a href="resume/miranda_cv.pdf" class="resume-btn" download>
+                        Resume
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+            <div class="container">
+                <div class="row" id="skillsContainer">
+                    <!-- Skills will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education" id="education">
+            <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+            <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img draggable="false" src="img/NU.jpg" alt="College">
+                    </div>
+                    <div class="content">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p>National University - Baliwag</p>
+                        <h4>2021-Present | Pursuing</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img draggable="false" src="img/STI.jpg" alt="High School">
+                    </div>
+                    <div class="content">
+                        <h3>Senior High School | ICT</h3>
+                        <p>STI College Malolos</p>
+                        <h4>2018-2021 | Completed</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Projects Section -->
+        <section class="work" id="work">
+            <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="projects-assets/asset1.png" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Morpolohikal na estruktura</h3>
+                        <p>Full stack Morpolohikal for genz slangs</p>
+                        <a href="projects/projects-folder/morpolohikal/morpolohikal.html" class="view-btn">
+                            <i class="fas fa-eye"></i> View Project
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="projects-assets/asset2.png" alt="Project 2">
+                    <div class="overlay">
+                        <h3>Water Delivery</h3>
+                        <p>The easy way for households and companies to order purified water — from daily home needs to bulk business supplies.</p>
+                        <a href="projects/projects-folder/waterdelivery/water-delivery.html" class="view-btn">
+                            <i class="fas fa-eye"></i> View Project
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="projects-assets/asset3.png" alt="Project 3">
+                    <div class="overlay">
+                        <h3>FarmerPicks</h3>
+                        <p>Your online marketplace for farm-fresh produce and local harvests.</p>
+                        <a href="projects/projects-folder/farmpicks/farmpicks.html" class="view-btn">
+                            <i class="fas fa-eye"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="viewall">
+                <a href="projects/all-projects.html" class="btn">
+                    <span>View All</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
+            
+        <!-- Experience Card 1-->    
+            <div class="experience-container">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="header-content">
+                            <h3>Web and App Developer</h3>
+                            <h4>Freelancer</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="duration">
+                            <i class="fas fa-calendar-alt"></i>
+                            2024 - 2025
+                        </p>
+                        <ul class="responsibilities">
+                            <li>Developed responsive web applications using React and Flutter</li>
+                            <li>Collaborated with clients to deliver custom solutions</li>
+                            <li>Implemented modern UI/UX designs and best practices</li>
+                        </ul>
+                    </div>
+                </div>
+        <!-- Experience Card 2-->   
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="header-content">
+                            <h3>Full Stack Developer</h3>
+                            <h4>Freelancer</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="duration">
+                            <i class="fas fa-calendar-alt"></i>
+                            2024 - 2025
+                        </p>
+                        <ul class="responsibilities">
+                            <li>Built and maintained web applications</li>
+                            <li>Built websites using HTML, CSS, PHP, and JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <section class="footer" id="contact">
+        <div class="box-container">
+            <div class="box">
+                <h3>Fernando's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/></p>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+                <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+                <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+                <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+                <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+                <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <p><i class="fas fa-phone"></i> +63 926-526-0441</p>
+                <p><i class="fas fa-envelope"></i> fernando.miranda282003@gmail.com</p>
+                <p><i class="fas fa-map-marked-alt"></i> Hagonoy, Bulacan, Philippines</p>
+                <div class="share">
+                    <a href="https://github.com/Fermando951/Fermando951" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    <a href="https://www.linkedin.com/in/fernando-miranda-2a7b77394/" class="fab fa-github" aria-label="GitHub"></a>
+                    <a href="https://t.me/@codeCrypt28" class="fab fa-telegram-plane" aria-label="Telegram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
