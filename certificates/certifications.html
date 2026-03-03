@@ -85,8 +85,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
             <!-- Certification 1: Blockchain Essentials -->
             <div class="cert-card bg-white rounded-3xl overflow-hidden shadow-lg transition-all duration-300 cursor-pointer hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#4834d4]/20" onclick="openModal('img/blockchain-cert.png')">
-                <div class="w-full h-[350px] overflow-hidden relative bg-gray-100 md:h-64 sm:h-52">
-                    <img src="img/blockchain-cert.png" alt="IIOE Blockchain Essentials Certificate" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                <div class="w-full h-[220px] overflow-hidden relative bg-gray-100 flex items-center justify-center md:h-48 sm:h-40">
+                    <img src="img/blockchain-cert.png" alt="IIOE Blockchain Essentials Certificate" class="w-full h-full object-contain transition-transform duration-500 hover:scale-105 p-3">
                 </div>
                 <div class="p-8 md:p-5">
                     <div class="flex items-start gap-5 mb-5 md:flex-col md:gap-4">
@@ -120,8 +120,8 @@
 
             <!-- Certification 2: Google Developers Students Club -->
             <div class="cert-card bg-white rounded-3xl overflow-hidden shadow-lg transition-all duration-300 cursor-pointer hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#4834d4]/20" onclick="openModal('img/gdsc-cert.jpg')">
-                <div class="w-full h-[350px] overflow-hidden relative bg-gray-100 md:h-64 sm:h-52">
-                    <img src="img/gdsc-cert.jpg" alt="Google Developers Students Club Certificate" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                <div class="w-full h-[220px] overflow-hidden relative bg-gray-100 flex items-center justify-center md:h-48 sm:h-40">
+                    <img src="img/gdsc-cert.jpg" alt="Google Developers Students Club Certificate" class="w-full h-full object-contain transition-transform duration-500 hover:scale-105 p-3">
                 </div>
                 <div class="p-8 md:p-5">
                     <div class="flex items-start gap-5 mb-5 md:flex-col md:gap-4">
@@ -152,14 +152,49 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Certification 3: Project Management Fundamentals -->
+            <div class="cert-card bg-white rounded-3xl overflow-hidden shadow-lg transition-all duration-300 cursor-pointer hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#4834d4]/20" onclick="openModal('img/ProjectManagementFundamentals_Miranda.jpg')">
+                <div class="w-full h-[220px] overflow-hidden relative bg-gray-100 flex items-center justify-center md:h-48 sm:h-40">
+                    <img src="img/ProjectManagementFundamentals_Miranda.jpg" alt="Project Management Fundamentals Certificate" class="w-full h-full object-contain transition-transform duration-500 hover:scale-105 p-3">
+                </div>
+                <div class="p-8 md:p-5">
+                    <div class="flex items-start gap-5 mb-5 md:flex-col md:gap-4">
+                        <div class="w-16 h-16 min-w-[60px] rounded-2xl bg-gradient-to-br from-[#4834d4] to-[#7c3aed] flex items-center justify-center text-3xl text-white">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl text-[#0a1e42] font-bold mb-3 leading-tight md:text-xl">
+                                Project Management Fundamentals
+                            </h3>
+                            <div class="text-base text-[#4834d4] font-semibold flex items-center gap-2">
+                                <i class="fas fa-building text-lg"></i>
+                                Udemy
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-base text-gray-600 leading-relaxed mb-6">
+                        Completed a comprehensive course covering the core principles of project management, including project planning, scheduling, risk management, team coordination, and delivering projects on time and within scope.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-[#e5ecfb] text-[#4834d4] rounded-full text-sm font-semibold">Project Planning</span>
+                        <span class="px-4 py-2 bg-[#e5ecfb] text-[#4834d4] rounded-full text-sm font-semibold">Risk Management</span>
+                        <span class="px-4 py-2 bg-[#e5ecfb] text-[#4834d4] rounded-full text-sm font-semibold">Scheduling</span>
+                        <span class="px-4 py-2 bg-[#e5ecfb] text-[#4834d4] rounded-full text-sm font-semibold">Team Coordination</span>
+                        <span class="px-4 py-2 bg-[#e5ecfb] text-[#4834d4] rounded-full text-sm font-semibold">Agile</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <!-- Modal for Certificate Preview -->
     <div id="certModal" class="modal hidden fixed z-[2000] left-0 top-0 w-full h-full bg-black/90 items-center justify-center">
-        <div class="modal-content relative max-w-[90%] max-h-[90%]">
+        <div class="modal-content relative" style="max-width: 60%; max-height: 80vh;">
             <span class="close-modal absolute -top-12 right-0 text-white text-4xl font-bold cursor-pointer transition-all duration-300 w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 hover:rotate-90 md:-top-10 md:text-3xl md:w-10 md:h-10" onclick="closeModal()">&times;</span>
-            <img id="modalImage" src="" alt="Certificate" class="w-full h-auto rounded-xl shadow-2xl">
+            <img id="modalImage" src="" alt="Certificate" class="rounded-xl shadow-2xl" style="max-width: 100%; max-height: 75vh; width: auto; height: auto; display: block; margin: 0 auto;">
         </div>
     </div>
 
@@ -217,8 +252,6 @@
                 behavior: 'smooth'
             });
         });
-
-
 
         // Add entrance animation
         window.addEventListener('load', () => {
